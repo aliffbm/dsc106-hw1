@@ -1,0 +1,30 @@
+.buttons, .buttons-chart {
+    text-align: center;
+}
+
+.buttons .button {
+    background-color: #04468f;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+.buttons-chart .button {
+    background-color: #666;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.bar {
+    fill: #a4468f;
+}
+
+#chart {
+    
+}
