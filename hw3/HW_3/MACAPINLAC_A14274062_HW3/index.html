@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Internal stylesheet import -->
+    <link rel="stylesheet" href="main.css">
+    <!-- External Script -->
+    <!-- <script src="https://cdn.zingchart.com/zingchart.min.js"></script> -->
+  </head>
+  <body>
+    <!-- Page Header Table -->
+    <table class="simpleTable" border="2">
+      <tr>
+        <td width="5%"><img src="assets/img/logo.jpg" alt="Legoland logo" class="pageLogo"/></td>
+        <td width="15%"><h1>Energy</h1></td>
+        <td><h2>Springfield</h2></td>
+      </tr>
+    </table>
+
+    <!-- Chart Placement Table -->
+    <table class="simpleTable greaterArea">
+      <tr>
+        <td rowspan="2" id="sharedGrid" class="chart"></td>
+        <td id="legendGrid">
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th>Default</th>
+                        <th>Power<br/><span>MW</span></th>
+                        <th>Conribution<br/><span>to demand</span></th>
+                        <th>Av.Value<br/><span>$/MWh</span></th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">
+                            Sources
+                        </th>
+                        <th id="total">
+                            --
+                        </th>
+                        <th>
+                            --
+                        </th>
+                        <th id="MWh"> -- </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="rooftop_solar">
+                        <td >
+                            Solar (Rooftop)
+                        </td>
+                        <td class="power"> -- </td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="wind">
+                        <td>
+                            Wind
+                        </td>
+                        <td class="power"></td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="hydro">
+                        <td>
+                            Hydro 
+                        </td>
+                        <td class="power"></td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="gas_ccgt">
+                        <td >
+                            Gas
+                        </td>
+                        <td class="power"></td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="distillate">
+                        <td >
+                            Distillate
+                        </td>
+                        <td class="power"></td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="black_coal">
+                        <td >
+                            Black Coal
+                        </td>
+                        <td class="power"></td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="loads">
+                        <td >
+                            Loads
+                        </td>
+                        <td class="power"></td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="exports">
+                        <td >
+                            Exports
+                        </td>
+                        <td class="power"></td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="pumps">
+                        <td >
+                            Pumps
+                        </td>
+                        <td class="power"></td>
+                        <td class="contribution"></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="net">
+                        <td >
+                            Net
+                        </td>
+                        <td class="power"></td>
+                        <td></td>
+                        <td class="avg"> -- </td>
+                    </tr>
+                    <tr id="renewables">
+                            <td >
+                                Renewables
+                            </td>
+                            <td class="power"></td>
+                            <td class="contribution"></td>
+                            <td class="avg"> -- </td>
+                        </tr>
+                </tbody>
+            </table>
+        </td>
+      </tr>
+      <tr>
+        <td id="pieGrid"></td>
+      </tr>
+    </table>
+
+    <!-- Internal JS Import -->
+    <script src="assets/js/highcharts/code/highcharts.js"></script>
+    <script src="assets/js/highcharts/code/modules/data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
